@@ -7,7 +7,7 @@
 <meta name="description" content="Денис Иванов — руководитель проектного офиса и IT Governance (CIO-1). 20+ лет в ИТ, 14 лет управления ИТ-портфелями, бюджетами и проектными офисами в банках, страховании, госсекторе и логистике.">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Денис Иванов — Head of PMO & IT Governance">
-<meta property="og:description" content="20+ лет в ИТ. Проектные офисы с нуля, управление ИТ-портфелем и бюджетом, Agile-трансформации. Сбер, ОТП Банк, Хамкорбанк, Citibank.">
+<meta property="og:description" content="Делаю ИТ управляемым: портфель, бюджет и сроки — под контролем Правления. Сбер, ОТП Банк, Хамкорбанк, Citibank.">
 <meta name="theme-color" content="#0f2a44">
 <script type="application/ld+json">
 {
@@ -28,14 +28,14 @@
 <style>
   :root{
     --bg:#f6f8fb; --surface:#ffffff; --ink:#14212e; --muted:#5b6b7b; --line:#e3e8ef;
-    --brand:#0f2a44; --accent:#1f7a8c; --accent-soft:#e6f2f4; --stat:#0f2a44;
+    --brand:#0f2a44; --accent:#1f7a8c; --accent-soft:#e6f2f4; --stat:#0f2a44; --good:#1f8a5b;
     --shadow:0 1px 2px rgba(15,42,68,.06),0 8px 24px rgba(15,42,68,.06);
     --radius:14px; --maxw:1040px;
   }
   @media (prefers-color-scheme: dark){
     :root{
       --bg:#0d1620; --surface:#14202c; --ink:#e7edf3; --muted:#9aabbb; --line:#243444;
-      --brand:#e7edf3; --accent:#5cc3d3; --accent-soft:#16323a; --stat:#e7edf3;
+      --brand:#e7edf3; --accent:#5cc3d3; --accent-soft:#16323a; --stat:#e7edf3; --good:#5fd39a;
       --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
     }
   }
@@ -48,7 +48,6 @@
   a:hover{text-decoration:underline}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
 
-  /* language switching: content for the inactive language is hidden */
   html[lang="ru"] [data-l="en"], html[lang="en"] [data-l="ru"]{display:none !important}
 
   header.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);
@@ -61,64 +60,101 @@
   .lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex-shrink:0}
   .lang button{border:0;background:transparent;color:var(--muted);font:600 13px/1 inherit;padding:8px 12px;cursor:pointer}
   .lang button[aria-pressed="true"]{background:var(--brand);color:var(--surface)}
-  @media (max-width:760px){ nav.menu{display:none} }
+  @media (max-width:860px){ nav.menu{display:none} }
 
   section{padding:56px 0}
-  h2{font-size:26px;line-height:1.25;margin:0 0 22px;color:var(--brand)}
+  h2{font-size:28px;line-height:1.25;margin:0 0 10px;color:var(--brand)}
+  .sub{color:var(--muted);margin:0 0 26px;max-width:680px}
   .eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
 
   /* hero */
-  .hero{padding:56px 0 40px}
+  .hero{padding:56px 0 36px}
   .hero-grid{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:center}
   .photo{width:200px;height:200px;border-radius:24px;object-fit:cover;background:var(--accent-soft);box-shadow:var(--shadow)}
   .initials{width:200px;height:200px;border-radius:24px;display:none;align-items:center;justify-content:center;
     background:linear-gradient(135deg,#0f2a44,#1f7a8c);color:#fff;font-size:64px;font-weight:700;box-shadow:var(--shadow)}
-  h1{font-size:44px;line-height:1.1;margin:0 0 8px;color:var(--brand);letter-spacing:-.5px}
-  .role{font-size:20px;font-weight:600;margin:0 0 14px}
-  .lead{font-size:18px;color:var(--muted);margin:0 0 22px;max-width:640px}
-  .meta{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:15px;margin-bottom:24px}
+  .name{font-size:20px;font-weight:700;margin:0 0 6px;color:var(--brand)}
+  h1{font-size:40px;line-height:1.15;margin:0 0 14px;color:var(--brand);letter-spacing:-.5px;max-width:720px}
+  h1 em{font-style:normal;color:var(--accent)}
+  .lead{font-size:18px;color:var(--muted);margin:0 0 20px;max-width:660px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:15px;margin-bottom:22px}
   .btns{display:flex;flex-wrap:wrap;gap:12px}
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:10px;font-weight:600;font-size:15px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:10px;font-weight:600;font-size:15px;cursor:pointer;border:0;font-family:inherit}
   .btn.primary{background:var(--accent);color:#fff}
   .btn.ghost{border:1px solid var(--line);color:var(--ink);background:var(--surface)}
   .btn:hover{text-decoration:none;filter:brightness(1.05)}
   @media (max-width:760px){
     .hero-grid{grid-template-columns:1fr;gap:24px}
     .photo,.initials{width:140px;height:140px;font-size:46px}
-    h1{font-size:34px}
+    h1{font-size:30px}
   }
 
   /* stats */
   .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
   .stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;box-shadow:var(--shadow)}
-  .stat b{display:block;font-size:30px;line-height:1.15;color:var(--stat);letter-spacing:-.3px}
-  .stat span{color:var(--muted);font-size:14.5px}
+  .stat b{display:block;font-size:30px;line-height:1.15;color:var(--stat);letter-spacing:-.3px;margin-bottom:4px}
+  .stat b span{font-size:inherit;color:inherit}
+  .stat > span{color:var(--muted);font-size:14.5px}
   @media (max-width:760px){ .stats{grid-template-columns:1fr 1fr} .stat b{font-size:24px} }
 
-  /* cards */
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
-  .card h3{margin:0 0 10px;font-size:18px;color:var(--brand)}
-  .card ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
-  .card li{margin:4px 0}
-  @media (max-width:860px){ .cards{grid-template-columns:1fr} }
+  /* value cards */
+  .vcards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .vcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+  .vcard h3{margin:0 0 8px;font-size:20px;line-height:1.3;color:var(--brand)}
+  .vcard p{margin:0 0 14px;color:var(--muted);font-size:15.5px}
+  .vcard .res{margin-top:auto;display:flex;align-items:baseline;gap:10px;border-top:1px solid var(--line);padding-top:14px}
+  .vcard .res b{font-size:26px;color:var(--good);white-space:nowrap}
+  .vcard .res > span{font-size:14.5px;color:var(--ink)}
+  .vcard .res b span{font-size:inherit;color:inherit}
+  @media (max-width:760px){ .vcards{grid-template-columns:1fr} }
 
-  /* timeline */
-  .timeline{position:relative;margin-left:8px;border-left:2px solid var(--line)}
-  .job{position:relative;padding:0 0 30px 28px}
-  .job::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;
-    background:var(--surface);border:2px solid var(--accent)}
-  .job:last-child{padding-bottom:0}
-  .job-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px}
-  .job h3{margin:0;font-size:18px;color:var(--brand)}
+  /* expandable cards (cases, 90 days, jobs) */
+  details{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+  details > summary{list-style:none;cursor:pointer;padding:22px 24px;display:flex;gap:16px;align-items:center}
+  details > summary::-webkit-details-marker{display:none}
+  details > summary .more{margin-left:auto;font-size:14px;font-weight:600;color:var(--accent);white-space:nowrap}
+  details > summary .more::after{content:" ▾"}
+  details[open] > summary .more::after{content:" ▴"}
+  details[open] > summary{border-bottom:1px solid var(--line)}
+  details:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+  .dbody{padding:18px 24px 22px}
+
+  .cases{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:start}
+  @media (max-width:760px){ .cases{grid-template-columns:1fr} }
+  .case summary{flex-wrap:wrap}
+  .case .big{font-size:30px;font-weight:700;color:var(--good);line-height:1;min-width:92px}
+  .case .ttl{flex:1;min-width:180px}
+  .case .ttl b{display:block;font-size:17px;color:var(--brand);line-height:1.3}
+  .case .ttl small{color:var(--muted);font-size:14px}
+  .sar{display:grid;gap:12px}
+  .sar div{font-size:15px;color:var(--muted)}
+  .sar i{font-style:normal;display:block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+  .sar strong{color:var(--ink);font-weight:600}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+  @media (max-width:860px){ .steps{grid-template-columns:1fr} }
+  .step .num{width:40px;height:40px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0}
+  .step .ttl b{display:block;color:var(--brand);font-size:17px}
+  .step .ttl small{color:var(--muted);font-size:14px}
+  .step ul,.job ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
+  .step li,.job li{margin:4px 0}
+  .job li strong,.step li strong{color:var(--ink);font-weight:600}
+
+  /* experience */
+  .jobs{display:grid;gap:12px}
+  .job summary{flex-wrap:wrap;gap:6px 16px;padding:18px 22px}
+  .job .ttl{flex:1;min-width:220px}
+  .job .ttl b{display:block;color:var(--brand);font-size:17px}
+  .job .ttl small{color:var(--muted);font-size:14.5px}
+  .job .key{flex-basis:100%;order:3;font-size:15px;color:var(--ink)}
+  .job .key strong{color:var(--good)}
   .period{color:var(--muted);font-size:14px;white-space:nowrap}
-  .pos{font-weight:600;margin:2px 0 8px}
-  .job ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
-  .job li{margin:3px 0}
-  .job li strong{color:var(--ink);font-weight:600}
+  .job.static{padding:18px 22px}
 
   .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   @media (max-width:760px){ .two{grid-template-columns:1fr} }
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+  .card h3{margin:0 0 10px;font-size:18px;color:var(--brand)}
   .plain{list-style:none;margin:0;padding:0;color:var(--muted)}
   .plain li{margin:6px 0}
   .plain b{color:var(--ink);font-weight:600}
@@ -133,9 +169,10 @@
   footer{padding:28px 0 40px;color:var(--muted);font-size:13px;text-align:center}
 
   @media print{
-    header.top,.lang,.btns,.contact .btns{display:none !important}
-    body{background:#fff;color:#000} section{padding:18px 0}
-    .stat,.card{box-shadow:none}
+    header.top,.lang,.btns,.contact,.more,.noprint{display:none !important}
+    body{background:#fff;color:#000;font-size:13px} section{padding:14px 0}
+    .stat,.card,details,.vcard{box-shadow:none;break-inside:avoid}
+    .hero{padding:10px 0}
   }
 </style>
 </head>
@@ -147,9 +184,10 @@
       <span data-l="ru">Денис Иванов</span><span data-l="en">Denis Ivanov</span>
     </a>
     <nav class="menu" aria-label="Навигация">
-      <a href="#expertise"><span data-l="ru">Экспертиза</span><span data-l="en">Expertise</span></a>
+      <a href="#value"><span data-l="ru">Чем полезен</span><span data-l="en">Value</span></a>
+      <a href="#cases"><span data-l="ru">Кейсы</span><span data-l="en">Case studies</span></a>
+      <a href="#first90"><span data-l="ru">Первые 90 дней</span><span data-l="en">First 90 days</span></a>
       <a href="#experience"><span data-l="ru">Опыт</span><span data-l="en">Experience</span></a>
-      <a href="#education"><span data-l="ru">Образование</span><span data-l="en">Education</span></a>
       <a href="#contact"><span data-l="ru">Контакты</span><span data-l="en">Contact</span></a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
@@ -170,14 +208,14 @@
       </div>
       <div>
         <p class="eyebrow">Head of PMO · IT Governance · CIO-1</p>
-        <h1><span data-l="ru">Денис Иванов</span><span data-l="en">Denis Ivanov</span></h1>
-        <p class="role">
-          <span data-l="ru">Руководитель проектного офиса и IT Governance</span>
-          <span data-l="en">Head of Project Management Office & IT Governance</span>
-        </p>
+        <p class="name"><span data-l="ru">Денис Иванов</span><span data-l="en">Denis Ivanov</span></p>
+        <h1>
+          <span data-l="ru">Делаю ИТ <em>управляемым</em>: портфель, бюджет и сроки — под контролем Правления</span>
+          <span data-l="en">I make IT <em>governable</em>: portfolio, budget and delivery under Board-level control</span>
+        </h1>
         <p class="lead">
-          <span data-l="ru">Выстраиваю проектные офисы и системы управления ИТ-портфелем и бюджетом в крупных банках и корпорациях: от методологии и приоритизации до отчётности для Правления и Наблюдательного совета.</span>
-          <span data-l="en">I build project management offices and IT portfolio and budget governance in large banks and corporations — from methodology and prioritisation to reporting for the Management Board and Supervisory Board.</span>
+          <span data-l="ru">Строю проектные офисы и системы управления ИТ-портфелем в крупных банках и корпорациях. Бизнес получает больше изменений в срок, Правление — прозрачный ИТ-бюджет и понятные решения.</span>
+          <span data-l="en">I build project management offices and IT portfolio governance in large banks and corporations. The business gets more change delivered on time; the Board gets a transparent IT budget and clear decisions.</span>
         </p>
         <div class="meta">
           <span data-l="ru">📍 Москва · готов к командировкам</span>
@@ -188,6 +226,7 @@
         <div class="btns">
           <a class="btn primary" href="https://t.me/denisvladimirovichivanov" target="_blank" rel="noopener">Telegram</a>
           <a class="btn ghost" href="mailto:dionis.ivanov@gmail.com">dionis.ivanov@gmail.com</a>
+          <button class="btn ghost js-pdf" type="button"><span data-l="ru">Резюме в PDF</span><span data-l="en">CV as PDF</span></button>
         </div>
       </div>
     </div>
@@ -209,67 +248,193 @@
         <div class="stat"><b>4</b>
           <span data-l="ru">проектных офиса построены с нуля, ещё один перезапущен</span>
           <span data-l="en">PMOs built from scratch, one more relaunched</span></div>
-        <div class="stat"><b>40% → 10%</b>
-          <span data-l="ru">доля проектов с просрочкой (Ренессанс Кредит)</span>
-          <span data-l="en">share of delayed projects (Renaissance Credit)</span></div>
         <div class="stat"><b><span data-l="ru">×3,5</span><span data-l="en">×3.5</span></b>
-          <span data-l="ru">рост объёма плановой реализации изменений (Хамкорбанк)</span>
-          <span data-l="en">growth in planned change delivery (Hamkorbank)</span></div>
+          <span data-l="ru">рост объёма изменений, поставляемых по плану, за счёт системы приоритизации</span>
+          <span data-l="en">more change delivered on plan, thanks to a prioritisation system</span></div>
+        <div class="stat"><b><span data-l="ru">до $40M</span><span data-l="en">up to $40M</span></b>
+          <span data-l="ru">портфели проектов в зелёной зоне</span>
+          <span data-l="en">project portfolios kept in the green zone</span></div>
       </div>
     </div>
   </section>
 
-  <!-- EXPERTISE -->
-  <section id="expertise">
+  <!-- VALUE -->
+  <section id="value">
     <div class="wrap">
-      <p class="eyebrow"><span data-l="ru">Экспертиза</span><span data-l="en">Expertise</span></p>
-      <h2><span data-l="ru">Чем я полезен компании</span><span data-l="en">How I help a company</span></h2>
-      <div class="cards">
-        <div class="card">
-          <h3><span data-l="ru">Проектный офис (PMO)</span><span data-l="en">Project Management Office</span></h3>
-          <ul data-l="ru">
-            <li>PMO с нуля: методология, регламенты, шаблоны</li>
-            <li>Управление портфелем до 40 проектов</li>
-            <li>Ресурсное планирование команд и центров компетенций</li>
-            <li>Риски, сроки, бюджет и отчётность для топ-менеджмента</li>
-          </ul>
-          <ul data-l="en">
-            <li>PMO from scratch: methodology, policies, templates</li>
-            <li>Portfolio management of up to 40 projects</li>
-            <li>Capacity planning for teams and competence centres</li>
-            <li>Risk, schedule, budget and executive reporting</li>
-          </ul>
+      <p class="eyebrow"><span data-l="ru">Чем я полезен</span><span data-l="en">How I help</span></p>
+      <h2><span data-l="ru">Узнаёте свою ситуацию? С этим я и прихожу</span><span data-l="en">Sound familiar? This is what I fix</span></h2>
+      <p class="sub"><span data-l="ru">Четыре типовые задачи, с которыми ко мне приходят банки и крупные компании, и результат, который я уже достигал.</span>
+        <span data-l="en">Four typical challenges banks and large companies bring to me — and results I have already delivered.</span></p>
+      <div class="vcards">
+        <div class="vcard">
+          <h3><span data-l="ru">ИТ не успевает за бизнесом?</span><span data-l="en">IT can’t keep up with the business?</span></h3>
+          <p><span data-l="ru">Выстраиваю единый вход спроса, прозрачные правила приоритизации и квартальное планирование команд. Бизнес знает, что и когда получит.</span>
+             <span data-l="en">I set up a single demand intake, transparent prioritisation rules and quarterly team planning. The business knows what it gets and when.</span></p>
+          <div class="res"><b><span data-l="ru">×3,5</span><span data-l="en">×3.5</span></b><span><span data-l="ru">изменений поставляется по плану</span><span data-l="en">more change delivered on plan</span></span></div>
         </div>
-        <div class="card">
-          <h3>IT Governance</h3>
-          <ul data-l="ru">
-            <li>Приоритизация спроса: проекты и ≈1 400 изменений в год</li>
-            <li>Бюджет ИТ, CAPEX/OPEX, план-факт</li>
-            <li>Портфель ИТ-стратегии (с McKinsey и KPMG)</li>
-            <li>Правление, Наблюдательный совет, аудит, регулятор, закупки</li>
-          </ul>
-          <ul data-l="en">
-            <li>Demand prioritisation: projects and ~1,400 changes a year</li>
-            <li>IT budgeting, CAPEX/OPEX, plan vs actual</li>
-            <li>IT strategy portfolio (with McKinsey and KPMG)</li>
-            <li>Management &amp; Supervisory Boards, audit, regulator, procurement</li>
-          </ul>
+        <div class="vcard">
+          <h3><span data-l="ru">Бюджет ИТ растёт, а отдача неочевидна?</span><span data-l="en">IT budget keeps growing, but the return is unclear?</span></h3>
+          <p><span data-l="ru">Делаю ИТ-бюджет прозрачным: CAPEX/OPEX, план-факт, связь каждого рубля с портфелем. Готовлю решения для Правления и Наблюдательного совета.</span>
+             <span data-l="en">I make the IT budget transparent: CAPEX/OPEX, plan vs actual, every rouble tied to the portfolio. I prepare decisions for the Management and Supervisory Boards.</span></p>
+          <div class="res"><b>$110M+</b><span><span data-l="ru">ИТ-бюджет под управлением</span><span data-l="en">IT budget under governance</span></span></div>
         </div>
-        <div class="card">
-          <h3><span data-l="ru">Трансформация и поставка</span><span data-l="en">Transformation & Delivery</span></h3>
-          <ul data-l="ru">
-            <li>Agile и гибридные модели управления</li>
-            <li>Переход ИТ на кросс-функциональные команды</li>
-            <li>Релизы, инциденты, SLA, предсказуемость поставки</li>
-            <li>Подрядчики и тендеры</li>
-          </ul>
-          <ul data-l="en">
-            <li>Agile and hybrid operating models</li>
-            <li>Moving IT to cross-functional teams</li>
-            <li>Releases, incidents, SLA, predictable delivery</li>
-            <li>Vendors and tenders</li>
-          </ul>
+        <div class="vcard">
+          <h3><span data-l="ru">Проекты сдвигаются, портфель не прозрачен?</span><span data-l="en">Projects slip and the portfolio is opaque?</span></h3>
+          <p><span data-l="ru">Строю проектный офис: методология, ритм портфельных комитетов, дашборды для топ-менеджмента, команда сильных руководителей проектов.</span>
+             <span data-l="en">I build the PMO: methodology, portfolio committee cadence, executive dashboards and a strong team of project managers.</span></p>
+          <div class="res"><b>100%</b><span><span data-l="ru">проектов в срок в портфеле до 1,8 млрд ₽ в год (Сбер)</span><span data-l="en">of projects on time in a portfolio of up to RUB 1.8bn a year (Sber)</span></span></div>
         </div>
+        <div class="vcard">
+          <h3><span data-l="ru">Трансформация буксует?</span><span data-l="en">Transformation stalling?</span></h3>
+          <p><span data-l="ru">Перевожу ИТ на кросс-функциональные команды и гибридную модель управления, не останавливая текущий портфель.</span>
+             <span data-l="en">I move IT to cross-functional teams and a hybrid operating model without stopping the running portfolio.</span></p>
+          <div class="res"><b>350</b><span><span data-l="ru">человек в новой модели — на месяц раньше плана</span><span data-l="en">people moved to the new model — a month ahead of plan</span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases">
+    <div class="wrap">
+      <p class="eyebrow"><span data-l="ru">Кейсы</span><span data-l="en">Case studies</span></p>
+      <h2><span data-l="ru">Как это было на практике</span><span data-l="en">How it worked in practice</span></h2>
+      <p class="sub"><span data-l="ru">Нажмите на карточку, чтобы увидеть ситуацию, что я сделал и к какому результату это привело.</span>
+        <span data-l="en">Click a card to see the situation, what I did and the result.</span></p>
+      <div class="cases">
+
+        <details class="case">
+          <summary><span class="big"><span data-l="ru">×3,5</span><span data-l="en">×3.5</span></span>
+            <span class="ttl"><b><span data-l="ru">Проектный офис ИТ с нуля</span><span data-l="en">An IT PMO from scratch</span></b>
+              <small><span data-l="ru">Банк, ИТ-блок 450 человек</span><span data-l="en">Bank, 450-strong IT unit</span></small></span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span></summary>
+          <div class="dbody sar">
+            <div><i><span data-l="ru">Ситуация</span><span data-l="en">Situation</span></i>
+              <span data-l="ru">Около 350 запросов на изменения в квартал, 24 команды центров компетенций и большой проектный портфель — без единых правил, что делать первым.</span>
+              <span data-l="en">Around 350 change requests a quarter, 24 competence-centre teams and a large project portfolio — with no shared rules on what goes first.</span></div>
+            <div><i><span data-l="ru">Что сделал</span><span data-l="en">What I did</span></i>
+              <span data-l="ru">Построил проектный офис ИТ, ввёл единый вход спроса и методологию приоритизации, которую утвердило Правление, запустил квартальное планирование 180–200 специалистов.</span>
+              <span data-l="en">Built the IT PMO, introduced a single demand intake and a prioritisation methodology approved by the Management Board, and launched quarterly planning for 180–200 specialists.</span></div>
+            <div><i><span data-l="ru">Результат</span><span data-l="en">Result</span></i>
+              <span data-l="ru">Объём изменений, поставляемых по плану, вырос <strong>в 3,5 раза</strong>; квартальные планы команд выполняются в срок; портфель <strong>35–38 проектов на $35M</strong> под управлением.</span>
+              <span data-l="en">Change delivered on plan grew <strong>3.5×</strong>; team quarterly plans are delivered on time; a portfolio of <strong>35–38 projects worth $35M</strong> under governance.</span></div>
+          </div>
+        </details>
+
+        <details class="case">
+          <summary><span class="big">90%</span>
+            <span class="ttl"><b><span data-l="ru">Портфель, которому снова верят</span><span data-l="en">A portfolio people trust again</span></b>
+              <small><span data-l="ru">Банк, 30–40 проектов</span><span data-l="en">Bank, 30–40 projects</span></small></span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span></summary>
+          <div class="dbody sar">
+            <div><i><span data-l="ru">Ситуация</span><span data-l="en">Situation</span></i>
+              <span data-l="ru">Портфель 30–40 проектов, сроки регулярно сдвигались, проекты часто просили дополнительное финансирование.</span>
+              <span data-l="en">A portfolio of 30–40 projects with frequently shifting deadlines and regular requests for extra funding.</span></div>
+            <div><i><span data-l="ru">Что сделал</span><span data-l="en">What I did</span></i>
+              <span data-l="ru">Ввёл единые правила планирования и контроля, ритм портфельных комитетов и раннее эскалирование рисков; собрал и развил команду из 12 руководителей проектов.</span>
+              <span data-l="en">Introduced common planning and control rules, a portfolio committee cadence and early risk escalation; built and developed a team of 12 project managers.</span></div>
+            <div><i><span data-l="ru">Результат</span><span data-l="en">Result</span></i>
+              <span data-l="ru">Доля проектов в срок выросла <strong>с 60% до 90%</strong>; запросов на допфинансирование <strong>на 85% меньше</strong>; задач, выпадающих из релизов, <strong>на 20% меньше</strong>.</span>
+              <span data-l="en">On-time projects rose <strong>from 60% to 90%</strong>; <strong>85% fewer</strong> extra funding requests; <strong>20% fewer</strong> tasks dropped from releases.</span></div>
+          </div>
+        </details>
+
+        <details class="case">
+          <summary><span class="big">350</span>
+            <span class="ttl"><b><span data-l="ru">Agile-трансформация ИТ на месяц раньше плана</span><span data-l="en">IT Agile transformation a month early</span></b>
+              <small><span data-l="ru">Банк международной группы</span><span data-l="en">Bank within an international group</span></small></span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span></summary>
+          <div class="dbody sar">
+            <div><i><span data-l="ru">Ситуация</span><span data-l="en">Situation</span></i>
+              <span data-l="ru">ИТ-блок нужно было перевести на кросс-функциональные команды, не теряя темп проектного портфеля и отчётности перед головным офисом группы.</span>
+              <span data-l="en">The IT unit had to move to cross-functional teams without losing pace on the project portfolio or reporting to group HQ.</span></div>
+            <div><i><span data-l="ru">Что сделал</span><span data-l="en">What I did</span></i>
+              <span data-l="ru">Спроектировал и провёл переход 350 сотрудников в 16 команд; параллельно вёл портфель 35–40 проектов и бэклог ИТ-стратегии с McKinsey; отчитывался перед головным офисом на английском.</span>
+              <span data-l="en">Designed and ran the move of 350 people into 16 teams; in parallel ran a 35–40 project portfolio and the IT strategy backlog with McKinsey; reported to group HQ in English.</span></div>
+            <div><i><span data-l="ru">Результат</span><span data-l="en">Result</span></i>
+              <span data-l="ru">Трансформация завершена <strong>на месяц раньше плана</strong>; портфель <strong>≈$40M в зелёной зоне</strong>.</span>
+              <span data-l="en">Transformation completed <strong>a month ahead of plan</strong>; portfolio of <strong>~$40M in the green zone</strong>.</span></div>
+          </div>
+        </details>
+
+        <details class="case">
+          <summary><span class="big">$83M</span>
+            <span class="ttl"><b><span data-l="ru">ИТ-бюджет, понятный Правлению</span><span data-l="en">An IT budget the Board understands</span></b>
+              <small><span data-l="ru">Банк, бюджет 2027 года</span><span data-l="en">Bank, 2027 budget</span></small></span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span></summary>
+          <div class="dbody sar">
+            <div><i><span data-l="ru">Ситуация</span><span data-l="en">Situation</span></i>
+              <span data-l="ru">Растущий ИТ-бюджет и запрос Правления на прозрачность: на что идут деньги и что они дают бизнесу.</span>
+              <span data-l="en">A growing IT budget and a Board request for transparency: where the money goes and what it delivers.</span></div>
+            <div><i><span data-l="ru">Что сделал</span><span data-l="en">What I did</span></i>
+              <span data-l="ru">Ввёл разделение CAPEX/OPEX и план-факт, связал бюджет с портфелем ИТ-стратегии (совместно с KPMG), провёл три бюджетных цикла; участвую в закупочной комиссии по контрактам на $17–19M.</span>
+              <span data-l="en">Introduced CAPEX/OPEX and plan-vs-actual, tied the budget to the IT strategy portfolio (with KPMG), ran three budget cycles; sit on the procurement committee for $17–19M of contracts.</span></div>
+            <div><i><span data-l="ru">Результат</span><span data-l="en">Result</span></i>
+              <span data-l="ru">Бюджет 2027 года — <strong>$83M + ФОТ $30–35M</strong> — сформирован и защищён на Правлении.</span>
+              <span data-l="en">The 2027 budget — <strong>$83M + $30–35M payroll</strong> — built and defended at the Management Board.</span></div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FIRST 90 DAYS -->
+  <section id="first90">
+    <div class="wrap">
+      <p class="eyebrow"><span data-l="ru">Первые 90 дней</span><span data-l="en">First 90 days</span></p>
+      <h2><span data-l="ru">Что я сделаю в первые 90 дней</span><span data-l="en">What I do in my first 90 days</span></h2>
+      <p class="sub"><span data-l="ru">Мой рабочий план на старте новой роли. Нажмите на шаг, чтобы раскрыть детали.</span>
+        <span data-l="en">My working plan for a new role. Click a step to see the details.</span></p>
+      <div class="steps">
+        <details class="step">
+          <summary><span class="num">1</span><span class="ttl"><b><span data-l="ru">Диагностика</span><span data-l="en">Diagnose</span></b><small><span data-l="ru">дни 1–30</span><span data-l="en">days 1–30</span></small></span>
+            <span class="more"><span data-l="ru">Детали</span><span data-l="en">Details</span></span></summary>
+          <div class="dbody">
+            <ul data-l="ru">
+              <li>Разбираю портфель, бюджет и очередь изменений: что идёт, сколько стоит, что застряло</li>
+              <li>Интервью с бизнес-заказчиками, ИТ и финансами</li>
+              <li>Карта проблем и список быстрых побед — согласую с руководителем</li>
+            </ul>
+            <ul data-l="en">
+              <li>Review the portfolio, budget and change queue: what runs, what it costs, what is stuck</li>
+              <li>Interviews with business owners, IT and finance</li>
+              <li>A problem map and a list of quick wins, agreed with my manager</li>
+            </ul>
+          </div>
+        </details>
+        <details class="step">
+          <summary><span class="num">2</span><span class="ttl"><b><span data-l="ru">Быстрые победы</span><span data-l="en">Quick wins</span></b><small><span data-l="ru">дни 31–60</span><span data-l="en">days 31–60</span></small></span>
+            <span class="more"><span data-l="ru">Детали</span><span data-l="en">Details</span></span></summary>
+          <div class="dbody">
+            <ul data-l="ru">
+              <li>Единая точка входа спроса и понятные правила приоритизации</li>
+              <li>Первый портфельный комитет с решениями, а не статусами</li>
+              <li>Дашборд для топ-менеджмента: портфель, бюджет, сроки на одном экране</li>
+            </ul>
+            <ul data-l="en">
+              <li>A single demand intake and clear prioritisation rules</li>
+              <li>The first portfolio committee that takes decisions, not just status updates</li>
+              <li>An executive dashboard: portfolio, budget and timelines on one screen</li>
+            </ul>
+          </div>
+        </details>
+        <details class="step">
+          <summary><span class="num">3</span><span class="ttl"><b><span data-l="ru">Система</span><span data-l="en">Make it stick</span></b><small><span data-l="ru">дни 61–90</span><span data-l="en">days 61–90</span></small></span>
+            <span class="more"><span data-l="ru">Детали</span><span data-l="en">Details</span></span></summary>
+          <div class="dbody">
+            <ul data-l="ru">
+              <li>Методология и регламенты, утверждённые руководством</li>
+              <li>Квартальное планирование команд и бюджетный цикл CAPEX/OPEX</li>
+              <li>KPI проектного офиса и план развития команды</li>
+            </ul>
+            <ul data-l="en">
+              <li>Methodology and policies approved by management</li>
+              <li>Quarterly team planning and a CAPEX/OPEX budget cycle</li>
+              <li>PMO KPIs and a team development plan</li>
+            </ul>
+          </div>
+        </details>
       </div>
     </div>
   </section>
@@ -278,121 +443,145 @@
   <section id="experience">
     <div class="wrap">
       <p class="eyebrow"><span data-l="ru">Опыт</span><span data-l="en">Experience</span></p>
-      <h2><span data-l="ru">Ключевые места работы и результаты</span><span data-l="en">Career highlights</span></h2>
+      <h2><span data-l="ru">Где я это делал</span><span data-l="en">Where I have done it</span></h2>
+      <p class="sub"><span data-l="ru">Главный результат на каждом месте работы. Подробности — по клику.</span>
+        <span data-l="en">The key result at each employer. Click for details.</span></p>
 
-      <div class="timeline">
+      <div class="jobs">
 
-        <div class="job">
-          <div class="job-head"><h3><span data-l="ru">Хамкорбанк (Узбекистан)</span><span data-l="en">Hamkorbank (Uzbekistan)</span></h3>
-            <span class="period"><span data-l="ru">2023 — н.в.</span><span data-l="en">2023 — present</span></span></div>
-          <p class="pos"><span data-l="ru">Руководитель проектного офиса ИТ, CIO-1</span><span data-l="en">Head of IT PMO, reporting to the CIO</span></p>
-          <ul data-l="ru">
-            <li>Построил проектный офис ИТ с нуля; готовлю решения по ИТ-портфелю и бюджету для комитета по стратегии, Правления и Наблюдательного совета.</li>
-            <li>Методология приоритизации изменений, утверждённая Правлением: объём плановой реализации <strong>×3,5</strong>, квартальные планы 24 команд (180–200 чел.) выполняются на <strong>95–98%</strong>.</li>
-            <li>Бюджет ИТ на 2027 год — <strong>$83 млн + ФОТ</strong>; внедрил CAPEX/OPEX, провёл 3 бюджетных цикла; портфель ИТ-стратегии совместно с KPMG.</li>
-          </ul>
-          <ul data-l="en">
-            <li>Built the IT PMO from scratch; prepare IT portfolio and budget decisions for the Strategy Committee, Management Board and Supervisory Board.</li>
-            <li>Board-approved change prioritisation methodology: planned delivery up <strong>3.5×</strong>, quarterly plans of 24 teams (180–200 people) met at <strong>95–98%</strong>.</li>
-            <li>2027 IT budget of <strong>$83M + payroll</strong>; introduced CAPEX/OPEX, ran 3 budget cycles; IT strategy portfolio together with KPMG.</li>
-          </ul>
-        </div>
+        <details class="job">
+          <summary><span class="ttl"><b><span data-l="ru">Хамкорбанк (Узбекистан)</span><span data-l="en">Hamkorbank (Uzbekistan)</span></b>
+              <small><span data-l="ru">Руководитель проектного офиса ИТ</span><span data-l="en">Head of IT PMO</span></small></span>
+            <span class="period"><span data-l="ru">2023 — н.в.</span><span data-l="en">2023 — present</span></span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span>
+            <span class="key"><span data-l="ru">Объём изменений, поставляемых по плану, — <strong>×3,5</strong>; ИТ-бюджет <strong>$83M + ФОТ</strong>.</span><span data-l="en">Change delivered on plan up <strong>3.5×</strong>; IT budget of <strong>$83M + payroll</strong>.</span></span></summary>
+          <div class="dbody">
+            <ul data-l="ru">
+              <li>Построил проектный офис ИТ с нуля; готовлю решения по ИТ-портфелю и бюджету для комитета по стратегии, Правления и Наблюдательного совета.</li>
+              <li>Методология приоритизации изменений, утверждённая Правлением: объём плановой реализации <strong>×3,5</strong>; квартальные планы 24 команд (180–200 чел.) выполняются в срок.</li>
+              <li>Бюджет ИТ на 2027 год — <strong>$83 млн + ФОТ</strong>; внедрил CAPEX/OPEX, провёл 3 бюджетных цикла; портфель ИТ-стратегии совместно с KPMG.</li>
+            </ul>
+            <ul data-l="en">
+              <li>Built the IT PMO from scratch; prepare IT portfolio and budget decisions for the Strategy Committee, Management Board and Supervisory Board.</li>
+              <li>Board-approved change prioritisation methodology: planned delivery up <strong>3.5×</strong>; quarterly plans of 24 teams (180–200 people) delivered on time.</li>
+              <li>2027 IT budget of <strong>$83M + payroll</strong>; introduced CAPEX/OPEX, ran 3 budget cycles; IT strategy portfolio together with KPMG.</li>
+            </ul>
+          </div>
+        </details>
 
-        <div class="job">
-          <div class="job-head"><h3><span data-l="ru">Ренессанс Кредит</span><span data-l="en">Renaissance Credit Bank</span></h3>
-            <span class="period">2023</span></div>
-          <p class="pos"><span data-l="ru">Руководитель проектного офиса</span><span data-l="en">Head of PMO</span></p>
-          <ul data-l="ru">
-            <li>Портфель 30–40 проектов, команда из 12 руководителей проектов.</li>
-            <li>Доля проектов с просрочкой снижена <strong>с 40% до 10%</strong>; <strong>−85%</strong> запросов на допфинансирование; <strong>−20%</strong> задач, выпадающих из релизов.</li>
-          </ul>
-          <ul data-l="en">
-            <li>Portfolio of 30–40 projects, team of 12 project managers.</li>
-            <li>Delayed projects cut <strong>from 40% to 10%</strong>; <strong>−85%</strong> extra funding requests; <strong>−20%</strong> tasks dropped from releases.</li>
-          </ul>
-        </div>
+        <details class="job">
+          <summary><span class="ttl"><b><span data-l="ru">Ренессанс Кредит</span><span data-l="en">Renaissance Credit Bank</span></b>
+              <small><span data-l="ru">Руководитель проектного офиса</span><span data-l="en">Head of PMO</span></small></span>
+            <span class="period">2023</span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span>
+            <span class="key"><span data-l="ru">Доля проектов в срок — <strong>с 60% до 90%</strong>.</span><span data-l="en">On-time projects <strong>from 60% to 90%</strong>.</span></span></summary>
+          <div class="dbody">
+            <ul data-l="ru">
+              <li>Портфель 30–40 проектов, команда из 12 руководителей проектов.</li>
+              <li>Доля проектов в срок выросла <strong>с 60% до 90%</strong>; запросов на допфинансирование <strong>на 85% меньше</strong>; задач, выпадающих из релизов, <strong>на 20% меньше</strong>.</li>
+            </ul>
+            <ul data-l="en">
+              <li>Portfolio of 30–40 projects, team of 12 project managers.</li>
+              <li>On-time projects rose <strong>from 60% to 90%</strong>; <strong>85% fewer</strong> extra funding requests; <strong>20% fewer</strong> tasks dropped from releases.</li>
+            </ul>
+          </div>
+        </details>
 
-        <div class="job">
-          <div class="job-head"><h3><span data-l="ru">Росгосстрах</span><span data-l="en">Rosgosstrakh (insurance)</span></h3>
-            <span class="period">2021 — 2022</span></div>
-          <p class="pos"><span data-l="ru">Начальник управления цифровой трансформации</span><span data-l="en">Head of Digital Transformation</span></p>
-          <ul data-l="ru">
-            <li>За квартал запустил <strong>4 продуктовые команды</strong>; первый продукт выведен на рынок за <strong>1 месяц вместо 3–6</strong>.</li>
-          </ul>
-          <ul data-l="en">
-            <li>Launched <strong>4 product teams</strong> in one quarter; first product brought to market in <strong>1 month instead of 3–6</strong>.</li>
-          </ul>
-        </div>
+        <details class="job">
+          <summary><span class="ttl"><b><span data-l="ru">Росгосстрах</span><span data-l="en">Rosgosstrakh (insurance)</span></b>
+              <small><span data-l="ru">Начальник управления цифровой трансформации</span><span data-l="en">Head of Digital Transformation</span></small></span>
+            <span class="period">2021 — 2022</span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span>
+            <span class="key"><span data-l="ru">Продукт на рынке <strong>за 1 месяц вместо 3–6</strong>.</span><span data-l="en">Product to market <strong>in 1 month instead of 3–6</strong>.</span></span></summary>
+          <div class="dbody">
+            <ul data-l="ru"><li>За квартал запустил <strong>4 продуктовые команды</strong>; первый продукт выведен на рынок за <strong>1 месяц вместо 3–6</strong>.</li></ul>
+            <ul data-l="en"><li>Launched <strong>4 product teams</strong> in one quarter; first product brought to market in <strong>1 month instead of 3–6</strong>.</li></ul>
+          </div>
+        </details>
 
-        <div class="job">
-          <div class="job-head"><h3><span data-l="ru">Правительство Москвы (ДИТ)</span><span data-l="en">Moscow Government IT Department</span></h3>
-            <span class="period">2020 — 2021</span></div>
-          <p class="pos"><span data-l="ru">Руководитель проектного офиса продукта «Электронный дом»</span><span data-l="en">Head of PMO, “Electronic House” city platform</span></p>
-          <ul data-l="ru">
-            <li>Масштабирование с пилота на всю Москву за 2 месяца; аудитория <strong>с 5 тыс. до 500 тыс.</strong> пользователей за 5 месяцев.</li>
-            <li>Число внедряемых изменений <strong>×2,5</strong>; в период COVID-19 — система поиска медперсонала, позволившая открыть 2 госпиталя за месяц.</li>
-          </ul>
-          <ul data-l="en">
-            <li>Scaled from pilot to all of Moscow in 2 months; users grew <strong>from 5K to 500K</strong> in 5 months.</li>
-            <li>Change throughput <strong>2.5×</strong>; during COVID-19 delivered a medical staffing system that enabled 2 hospitals to open within a month.</li>
-          </ul>
-        </div>
+        <details class="job">
+          <summary><span class="ttl"><b><span data-l="ru">Правительство Москвы (ДИТ)</span><span data-l="en">Moscow Government IT Department</span></b>
+              <small><span data-l="ru">Руководитель проектного офиса продукта «Электронный дом»</span><span data-l="en">Head of PMO, “Electronic House” city platform</span></small></span>
+            <span class="period">2020 — 2021</span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span>
+            <span class="key"><span data-l="ru">Аудитория <strong>с 5 тыс. до 500 тыс.</strong> за 5 месяцев.</span><span data-l="en">Users <strong>from 5K to 500K</strong> in 5 months.</span></span></summary>
+          <div class="dbody">
+            <ul data-l="ru">
+              <li>Масштабирование с пилота на всю Москву за 2 месяца; аудитория <strong>с 5 тыс. до 500 тыс.</strong> пользователей за 5 месяцев.</li>
+              <li>Число внедряемых изменений <strong>×2,5</strong>; в период COVID-19 — система поиска медперсонала, позволившая открыть 2 госпиталя за месяц.</li>
+            </ul>
+            <ul data-l="en">
+              <li>Scaled from pilot to all of Moscow in 2 months; users grew <strong>from 5K to 500K</strong> in 5 months.</li>
+              <li>Change throughput <strong>2.5×</strong>; during COVID-19 delivered a medical staffing system that enabled 2 hospitals to open within a month.</li>
+            </ul>
+          </div>
+        </details>
 
-        <div class="job">
-          <div class="job-head"><h3><span data-l="ru">ОТП Банк</span><span data-l="en">OTP Bank Russia (OTP Group)</span></h3>
-            <span class="period">2019 — 2020</span></div>
-          <p class="pos"><span data-l="ru">Начальник управления «Проектный офис ИТ»</span><span data-l="en">Head of IT PMO</span></p>
-          <ul data-l="ru">
-            <li>Agile-трансформация ИТ: <strong>350 сотрудников, 16 команд</strong>, завершена на месяц раньше плана.</li>
-            <li>Портфель 35–40 проектов (≈$40 млн) без «красной зоны»; бэклог ИТ-стратегии совместно с McKinsey; отчётность для головного офиса OTP Group.</li>
-          </ul>
-          <ul data-l="en">
-            <li>IT Agile transformation: <strong>350 people, 16 teams</strong>, completed a month ahead of plan.</li>
-            <li>Portfolio of 35–40 projects (~$40M) with no initiatives in the “red zone”; IT strategy backlog with McKinsey; reporting to OTP Group HQ.</li>
-          </ul>
-        </div>
+        <details class="job">
+          <summary><span class="ttl"><b><span data-l="ru">ОТП Банк</span><span data-l="en">OTP Bank Russia (OTP Group)</span></b>
+              <small><span data-l="ru">Начальник управления «Проектный офис ИТ»</span><span data-l="en">Head of IT PMO</span></small></span>
+            <span class="period">2019 — 2020</span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span>
+            <span class="key"><span data-l="ru">Agile-трансформация <strong>350 человек</strong> на месяц раньше плана.</span><span data-l="en">Agile transformation of <strong>350 people</strong> a month early.</span></span></summary>
+          <div class="dbody">
+            <ul data-l="ru">
+              <li>Agile-трансформация ИТ: <strong>350 сотрудников, 16 команд</strong>, завершена на месяц раньше плана.</li>
+              <li>Портфель 35–40 проектов (<strong>≈$40 млн</strong>) в зелёной зоне; бэклог ИТ-стратегии совместно с McKinsey; отчётность для головного офиса OTP Group.</li>
+            </ul>
+            <ul data-l="en">
+              <li>IT Agile transformation: <strong>350 people, 16 teams</strong>, completed a month ahead of plan.</li>
+              <li>Portfolio of 35–40 projects (<strong>~$40M</strong>) in the green zone; IT strategy backlog with McKinsey; reporting to OTP Group HQ.</li>
+            </ul>
+          </div>
+        </details>
 
-        <div class="job">
-          <div class="job-head"><h3><span data-l="ru">Первая Экспедиционная Компания (ПЭК)</span><span data-l="en">PEK (logistics)</span></h3>
-            <span class="period">2018 — 2019</span></div>
-          <p class="pos"><span data-l="ru">Руководитель проектного офиса / заместитель директора по ИТ</span><span data-l="en">Head of PMO / Deputy IT Director</span></p>
-          <ul data-l="ru">
-            <li>PMO с нуля и проектный комитет с акционерами; внедрений крупных проектов <strong>вдвое больше</strong>.</li>
-            <li>Новые сайт и мобильное приложение: онлайн-заказы <strong>×3–4</strong>, нагрузка на контакт-центр <strong>−20%</strong>.</li>
-          </ul>
-          <ul data-l="en">
-            <li>PMO from scratch and a project committee with shareholders; <strong>twice as many</strong> major projects delivered.</li>
-            <li>New website and mobile app: online orders <strong>3–4×</strong>, contact-centre load <strong>−20%</strong>.</li>
-          </ul>
-        </div>
+        <details class="job">
+          <summary><span class="ttl"><b><span data-l="ru">Первая Экспедиционная Компания (ПЭК)</span><span data-l="en">PEK (logistics)</span></b>
+              <small><span data-l="ru">Руководитель проектного офиса / заместитель директора по ИТ</span><span data-l="en">Head of PMO / Deputy IT Director</span></small></span>
+            <span class="period">2018 — 2019</span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span>
+            <span class="key"><span data-l="ru">Онлайн-заказы <strong>×3–4</strong>; крупных внедрений <strong>вдвое больше</strong>.</span><span data-l="en">Online orders <strong>3–4×</strong>; <strong>twice as many</strong> major roll-outs.</span></span></summary>
+          <div class="dbody">
+            <ul data-l="ru">
+              <li>PMO с нуля и проектный комитет с акционерами; внедрений крупных проектов <strong>вдвое больше</strong>.</li>
+              <li>Новые сайт и мобильное приложение: онлайн-заказы <strong>×3–4</strong>, нагрузка на контакт-центр <strong>−20%</strong>.</li>
+            </ul>
+            <ul data-l="en">
+              <li>PMO from scratch and a project committee with shareholders; <strong>twice as many</strong> major projects delivered.</li>
+              <li>New website and mobile app: online orders <strong>3–4×</strong>, contact-centre load <strong>−20%</strong>.</li>
+            </ul>
+          </div>
+        </details>
 
-        <div class="job">
-          <div class="job-head"><h3><span data-l="ru">Сбер</span><span data-l="en">Sber</span></h3>
-            <span class="period">2012 — 2018</span></div>
-          <p class="pos"><span data-l="ru">Старший ИТ-бизнес-партнёр (CTO направлений контакт-центров, бэк-офиса и андеррайтинга)</span><span data-l="en">Senior IT Business Partner (CTO for contact centres, back office and underwriting)</span></p>
-          <ul data-l="ru">
-            <li>Портфель с бюджетом <strong>до 1,8 млрд ₽ в год</strong>, <strong>100%</strong> проектов в срок; новая площадка контакт-центра запущена за 6 месяцев.</li>
-          </ul>
-          <ul data-l="en">
-            <li>Portfolio of <strong>up to RUB 1.8bn a year</strong>, <strong>100%</strong> of projects on time; a new contact-centre site launched in 6 months.</li>
-          </ul>
-        </div>
+        <details class="job">
+          <summary><span class="ttl"><b><span data-l="ru">Сбер</span><span data-l="en">Sber</span></b>
+              <small><span data-l="ru">Старший ИТ-бизнес-партнёр (CTO направлений контакт-центров, бэк-офиса и андеррайтинга)</span><span data-l="en">Senior IT Business Partner (CTO for contact centres, back office and underwriting)</span></small></span>
+            <span class="period">2012 — 2018</span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span>
+            <span class="key"><span data-l="ru"><strong>100%</strong> проектов в срок в портфеле до <strong>1,8 млрд ₽ в год</strong>.</span><span data-l="en"><strong>100%</strong> of projects on time in a portfolio of up to <strong>RUB 1.8bn a year</strong>.</span></span></summary>
+          <div class="dbody">
+            <ul data-l="ru"><li>Портфель с бюджетом <strong>до 1,8 млрд ₽ в год</strong>, <strong>100%</strong> проектов в срок; новая площадка контакт-центра запущена за 6 месяцев.</li></ul>
+            <ul data-l="en"><li>Portfolio of <strong>up to RUB 1.8bn a year</strong>, <strong>100%</strong> of projects on time; a new contact-centre site launched in 6 months.</li></ul>
+          </div>
+        </details>
 
-        <div class="job">
-          <div class="job-head"><h3>GE Money Bank</h3><span class="period">2010 — 2011</span></div>
-          <p class="pos"><span data-l="ru">Старший руководитель проектов</span><span data-l="en">Senior Project Manager</span></p>
-        </div>
-
-        <div class="job">
-          <div class="job-head"><h3>Citibank</h3><span class="period">2005 — 2010</span></div>
-          <p class="pos"><span data-l="ru">Старший руководитель проектов (ИТ)</span><span data-l="en">Senior IT Project Manager</span></p>
-          <ul data-l="ru">
-            <li>Безынцидентный перевод России на новую IVR-платформу в глобальной программе Citigroup — <strong>награда Citigroup</strong>.</li>
-          </ul>
-          <ul data-l="en">
-            <li>Zero-incident migration of Russia to the new IVR platform within a global Citigroup programme — <strong>Citigroup award</strong>.</li>
-          </ul>
-        </div>
+        <details class="job">
+          <summary><span class="ttl"><b>Citibank · GE Money Bank</b>
+              <small><span data-l="ru">Старший руководитель проектов (ИТ)</span><span data-l="en">Senior IT Project Manager</span></small></span>
+            <span class="period">2005 — 2011</span>
+            <span class="more"><span data-l="ru">Подробнее</span><span data-l="en">Details</span></span>
+            <span class="key"><span data-l="ru"><strong>Награда Citigroup</strong> за безынцидентную миграцию IVR-платформы.</span><span data-l="en"><strong>Citigroup award</strong> for a zero-incident IVR platform migration.</span></span></summary>
+          <div class="dbody">
+            <ul data-l="ru">
+              <li>Citibank (2005–2010): безынцидентный перевод России на новую IVR-платформу в глобальной программе Citigroup — <strong>награда Citigroup</strong>.</li>
+              <li>GE Money Bank (2010–2011): старший руководитель проектов.</li>
+            </ul>
+            <ul data-l="en">
+              <li>Citibank (2005–2010): zero-incident migration of Russia to the new IVR platform within a global Citigroup programme — <strong>Citigroup award</strong>.</li>
+              <li>GE Money Bank (2010–2011): Senior Project Manager.</li>
+            </ul>
+          </div>
+        </details>
 
       </div>
     </div>
@@ -443,6 +632,7 @@
         <div class="btns">
           <a class="btn primary" href="https://t.me/denisvladimirovichivanov" target="_blank" rel="noopener">Telegram</a>
           <a class="btn ghost" href="mailto:dionis.ivanov@gmail.com">Email</a>
+          <button class="btn ghost js-pdf" type="button"><span data-l="ru">Резюме в PDF</span><span data-l="en">CV as PDF</span></button>
         </div>
       </div>
     </div>
@@ -475,6 +665,19 @@
   setLang(fromUrl || saved || "ru");
   document.querySelectorAll(".lang button").forEach(function(b){
     b.addEventListener("click", function(){ setLang(b.dataset.set); });
+  });
+  /* print / PDF: open every expandable block so the PDF has full content */
+  var opened = [];
+  window.addEventListener("beforeprint", function(){
+    opened = [];
+    document.querySelectorAll("details:not([open])").forEach(function(d){ d.open = true; opened.push(d); });
+  });
+  window.addEventListener("afterprint", function(){ opened.forEach(function(d){ d.open = false; }); });
+  document.querySelectorAll(".js-pdf").forEach(function(b){
+    b.addEventListener("click", function(){
+      var a = document.createElement("a"); a.href = "Denis_Ivanov_CV.pdf"; a.download = "Denis_Ivanov_CV.pdf";
+      fetch(a.href, {method:"HEAD"}).then(function(r){ if(r.ok) a.click(); else window.print(); }).catch(function(){ window.print(); });
+    });
   });
 })();
 </script>
