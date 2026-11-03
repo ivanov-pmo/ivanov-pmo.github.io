@@ -675,7 +675,7 @@
   window.addEventListener("afterprint", function(){ opened.forEach(function(d){ d.open = false; }); });
   document.querySelectorAll(".js-pdf").forEach(function(b){
     b.addEventListener("click", function(){
-      var a = document.createElement("a"); a.href = "Denis_Ivanov_CV.pdf"; a.download = "Denis_Ivanov_CV.pdf";
+      var a = document.createElement("a"); a.href = "Denis_Ivanov_CV_1.pdf"; a.download = "Denis_Ivanov_CV.pdf";
       fetch(a.href, {method:"HEAD"}).then(function(r){ if(r.ok) a.click(); else window.print(); }).catch(function(){ window.print(); });
     });
   });
